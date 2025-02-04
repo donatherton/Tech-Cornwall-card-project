@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #490b81;
+  width: 600px;
+  height: 950px;
+  overflow: hidden;
+  color: #fff;
+}
+
+#profile-pic {
+  position: absolute;
+  top: 56px;
+  width: 50%;
+  height: auto;
+  border: 3px solid #000;
+  box-shadow: 25px 20px 0 #08b9cb,
+  26px 21px 0 3px #1c3486,
+  27px 21px 0 3px #08b9cb;
+}
+
+#logo {
+  position: absolute;
+  top: 34px;
+  left:64px;
+  width: 120px
+}
+
+.stripes {
+  width: 130%;
+  height: 60px;
+  transform: rotate(335deg);  
+}
+
+#top {
+  position: absolute;
+  top: 85px;
+  background-color: #05c7a2;
+}
+#mid {
+  position: absolute;
+  top: 151px;
+  background-color: #061462;
+}
+#bottom {
+  position: absolute;
+  top: 217px;
+  background-color: #de42e0;
+}
+
+#attr-div {
+  position: relative;
+  top: 110px;
+}
+
+input {
+  background-color: #490b81;
+  border: none;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+  width: 400px;
+}
+
+input#name {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+hr {
+  position: relative;
+  left: -30px;
+  color: #4087c8;
+  width: 380px;
+  border: 1px solid ;
+  margin-top: 0;
+}
+
+.rating {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #de42e0;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+  margin-left: 30px;
+}
+
+#fact-file {
+  position: absolute;
+  top: 750px;
+  width: 100%;
+  height: 190px;
+  background-color: #061462;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+textarea {
+  position: relative;
+  top: -10px;
+  left: 70px;
+  width: 70%;
+  height: 65%;
+  background-color: #061462;
+  border: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  resize: none;
+}
