@@ -1,4 +1,3 @@
-import profilePic from '../images/profile.png';
 import logo from '../images/logo.png';
 
 export default function Main() {
@@ -19,7 +18,10 @@ export default function Main() {
       <div className="stripes" id="top"></div>
       <div className="stripes" id="mid"></div>
       <div className="stripes" id="bottom"></div>
-      <img src={profilePic} id="profile-pic" alt="Profile picture" />
+      <div id="profile-pic">
+        
+        <img id="photo" alt="The screen capture will appear in this box." />
+      </div>
       <img src={logo} id="logo" alt="logo" />
       <input type="text" id="name" name="name" placeholder="Your name here" />
 

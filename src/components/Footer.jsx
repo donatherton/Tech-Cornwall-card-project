@@ -1,14 +1,15 @@
+import GetPhoto from './PhotoCapture';
 
 export default function Footer() {
 
   function convertToImage(){    
-    var element = document.getElementsByTagName("main")[0];console.log(element);
+    var element = document.querySelector('main');
     domtoimage
-      .toPng(element)
+      .toJpeg(element)
       .then(function (URL) {
         var newImg = new Image();
         newImg.src = URL;
-        document.getElementById('ShowImage').appendChild(newImg);
+        document.querySelector('#show-image').appendChild(newImg);
       })
       .catch(function (error) {
         console.error(error);
@@ -17,7 +18,9 @@ export default function Footer() {
 
   return(
     <footer>
-      <div id="ShowImage"></div>
+      <div id="show-image"></div>
+      {GetPhoto()}
+      <canvas id="canvas"></canvas>
       <button onClick={convertToImage}>Convert to image</button>
     </footer>
   );

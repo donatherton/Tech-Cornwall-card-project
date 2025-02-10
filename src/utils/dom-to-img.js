@@ -28,7 +28,7 @@
             options: {}
         }
     };
-
+// Line 557 I changed to clentWidth
     if (typeof module !== 'undefined')
         module.exports = domtoimage;
     else
@@ -554,7 +554,7 @@
         function width(node) {
             var leftBorder = px(node, 'border-left-width');
             var rightBorder = px(node, 'border-right-width');
-            return node.scrollWidth + leftBorder + rightBorder;
+            return node.clientWidth + leftBorder + rightBorder; // Changed from scrollWidth to clientWidth
         }
 
         function height(node) {
