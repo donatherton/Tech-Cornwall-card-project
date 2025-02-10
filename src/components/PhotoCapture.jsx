@@ -21,7 +21,7 @@ function startup() {
       video.play();
     })
     .catch((err) => {
-      console.error(`An error occurred: ${err}`);
+      alert(`An error occurred: ${err}`);
     });
 
   video.addEventListener(
@@ -80,16 +80,12 @@ function takePicture() {
 
 export default function GetPhoto() {
 
-  const viewDiv = <div id="camera">
-    <video id="video">Video stream not available.</video>
-    <button id="start-button">Take photo</button>
-  </div>
-
   return(
-    <>
-      {viewDiv}
-      {window.addEventListener("load", startup, false)}
-    </>
+    <div id="camera">
+      <video id="video">Video stream not available.</video>
+      <button id="photo-button" onClick={startup}>Prepare photo</button>
+      <button id="start-button">Capture photo</button>
+    </div>
   )
 }
 

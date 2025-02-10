@@ -28,11 +28,14 @@
             options: {}
         }
     };
+    
 // Line 557 I changed to clentWidth
     if (typeof module !== 'undefined')
         module.exports = domtoimage;
-    else
+    else {
+        console.log('Bibble',domtoimage);
         global.domtoimage = domtoimage;
+    }
 
 
     /**

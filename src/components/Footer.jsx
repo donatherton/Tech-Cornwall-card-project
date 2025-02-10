@@ -19,7 +19,7 @@ export default function Footer() {
   return(
     <footer>
       <div id="show-image"></div>
-      {GetPhoto()}
+      <GetPhoto />
       <canvas id="canvas"></canvas>
       <button onClick={convertToImage}>Convert to image</button>
     </footer>
