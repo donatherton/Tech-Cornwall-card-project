@@ -1,4 +1,5 @@
 import GetPhoto from './PhotoCapture';
+import domtoimage from '../utils/dom-to-img/index';
 
 export default function Footer() {
 
@@ -18,8 +19,8 @@ export default function Footer() {
 
   return(
     <footer>
-      <div id="show-image"></div>
-      <GetPhoto />
+      <div id="show-image"></div>      
+        <GetPhoto />
       <canvas id="canvas"></canvas>
       <button onClick={convertToImage}>Convert to image</button>
     </footer>

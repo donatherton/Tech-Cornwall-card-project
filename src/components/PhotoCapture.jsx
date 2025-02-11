@@ -1,4 +1,4 @@
-const width = 300;
+const width = 400;
 let height = 0;
 
 let streaming = false;
@@ -82,7 +82,9 @@ export default function GetPhoto() {
 
   return(
     <div id="camera">
-      <video id="video">Video stream not available.</video>
+      <div id="video-div">
+        <video id="video">Video stream not available.</video>
+      </div>
       <button id="photo-button" onClick={startup}>Prepare photo</button>
       <button id="start-button">Capture photo</button>
     </div>
