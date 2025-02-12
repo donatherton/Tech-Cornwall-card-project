@@ -1,6 +1,7 @@
 import logo from '../images/logo.png';
+import QR from './QrCode';
 
-export default function Main() {
+export default function Main({url}) {
 
   const inputs = [...Array(5)].map((e,i) =>
     <div className="input-div" key={i}>
@@ -18,9 +19,8 @@ export default function Main() {
       <div className="stripes" id="top"></div>
       <div className="stripes" id="mid"></div>
       <div className="stripes" id="bottom"></div>
-      <div id="profile-pic">
-        
-        <img id="photo" alt="The screen capture will appear in this box." />
+      <div id="profile-pic">       
+        <img id="photo" alt="" />
       </div>
       <img src={logo} id="logo" alt="logo" />
       <input type="text" id="name" name="name" placeholder="Your name here" />
@@ -31,6 +31,9 @@ export default function Main() {
 
       <div id="fact-file">
         <h2>FACT FILE</h2>
+        <div id="qr-code">
+          <QR url={url} />
+        </div>
         <textarea name="text-area" placeholder="Say a few words about yourself here" />
       </div>
     </main>
