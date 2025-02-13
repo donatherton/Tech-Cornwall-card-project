@@ -1,7 +1,10 @@
-import GetPhoto from './PhotoCapture';
+
 import domtoimage from '../utils/dom-to-img/index';
+import PhotoModal from './PhotoModal';
+import { useRef } from 'react';
 
 export default function Footer({setUrl}) {
+  const ref = useRef(null);
 
   function convertToImage(){    
     var element = document.querySelector('main');
@@ -25,8 +28,9 @@ export default function Footer({setUrl}) {
 
   return(
     <footer>
-      <div id="show-image"></div>      
-        <GetPhoto />
+      <div ref={ref} id="show-image"></div>
+      <PhotoModal props={ref} />
+      {/* <GetPhoto /> */}
       <canvas id="canvas"></canvas>
       <form>
         <input className="qr-input" id="qr" name="qr" required type="url" placeholder="https://techcornwall.co.uk" />

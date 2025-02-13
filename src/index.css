@@ -191,7 +191,8 @@ button:focus-visible {
 }
 
 #start-button {
-  z-index: 1000000;
+  /* z-index: 1000000; */
+  display: none;
 }
 
 #qr-code {
