@@ -7,6 +7,7 @@ let video = null;
 let canvas = null;
 let photo = null;
 let startButton = null;
+let openButton = null;
 
 export default function GetPhoto({setIsOpen}) {
 
@@ -15,7 +16,8 @@ export default function GetPhoto({setIsOpen}) {
     canvas = document.querySelector('#canvas');
     photo = document.querySelector('#photo');
     startButton = document.querySelector('#start-button');
-    document.querySelector('#photo-button').style.display = 'none';
+    openButton = document.querySelector('#photo-button')
+    openButton.style.display = 'none';
     startButton.style.display = 'block';
 
     navigator.mediaDevices
@@ -52,10 +54,11 @@ export default function GetPhoto({setIsOpen}) {
       "click",
       (e) => {
         takePicture();
-        setIsOpen(false);
         document.querySelector('#profile-pic').scrollIntoView({behavior: 'smooth', block: 'start'});
         document.querySelector('#video').srcObject.getTracks()[0].stop();
         streaming = false;
+        startButton.style.display = 'none';
+        openButton.style.display = 'block';
       },
       false,
     );
