@@ -12,7 +12,10 @@ export default function Footer({setUrl}) {
       .then(function (URL) {
         var newImg = new Image();
         newImg.src = URL;
-        document.querySelector('#show-image').appendChild(newImg);
+        const imgDiv = document.querySelector('#show-image');
+        imgDiv.appendChild(newImg);
+        imgDiv.style.visibility = 'visible';
+        imgDiv.style.opacity = 1;
       })
       .catch(function (error) {
         console.error(error);
@@ -27,7 +30,7 @@ export default function Footer({setUrl}) {
 
   return(
     <footer>
-      <div ref={ref} id="show-image"></div>
+      <div ref={ref} id="show-image"><p>Image (right-click or long press for options):</p></div>
        { <GetPhoto /> }
       <canvas id="canvas"></canvas>
       <form>
