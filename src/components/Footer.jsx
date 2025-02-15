@@ -15,7 +15,6 @@ export default function Footer({setUrl}) {
         newImg.style.scrollMarginTop = '150px';
         const imgDiv = document.querySelector('#show-image');
         imgDiv.appendChild(newImg);
-        imgDiv.style.visibility = 'visible';
         imgDiv.style.opacity = 1;
         // setTimeout necessary as height of div changing
         setTimeout(() => {

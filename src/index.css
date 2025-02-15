@@ -168,9 +168,8 @@ footer {
 }
 
 #show-image {
-  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 1s linear;
   margin: 20px 0;
   width: 600px;
   font-weight: bold;
