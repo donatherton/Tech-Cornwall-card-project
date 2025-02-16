@@ -32,6 +32,7 @@ main {
   26px 21px 0 3px #1c3486,
   27px 21px 0 3px #08b9cb;
   overflow: hidden;
+  background-color: #490b81;
 }
 
 #canvas {
@@ -199,6 +200,13 @@ button:focus-visible {
 
 #start-button {
   display: none;
+}
+
+#convert-button {
+  width: 400px;
+  /* background-color: #05c7a2; */
+  font-weight: bold;
+  padding: 20px;
 }
 
 #qr-code {

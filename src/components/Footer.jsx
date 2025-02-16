@@ -40,7 +40,7 @@ export default function Footer({setUrl}) {
         <label>Enter a website / social media URL for QR code:<input className="qr-input" id="qr" name="qr" required type="url" placeholder="https://techcornwall.co.uk" /></label>
         <button type="submit" onClick={(e) => qrGenerate(e)}>Generate QR</button>
       </form>
-      <button onClick={convertToImage}>Convert to image</button>
+      <button id="convert-button" onClick={convertToImage}>Convert to image</button>
       <div ref={ref} id="show-image"><p>Image (right-click or long press for options):</p></div>
     </footer>
   );

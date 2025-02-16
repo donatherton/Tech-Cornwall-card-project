@@ -1,4 +1,5 @@
 import logo from '../images/logo.png';
+import profilePlaceholder from '../images/profile-placeholder.png';
 import QR from './QrCode';
 
 export default function Main({url}) {
@@ -20,7 +21,7 @@ export default function Main({url}) {
       <div className="stripes" id="mid"></div>
       <div className="stripes" id="bottom"></div>
       <div id="profile-pic">       
-        <img id="photo" alt="" />
+        <img src={profilePlaceholder} id="photo" alt="" />
       </div>
       <img src={logo} id="logo" alt="logo" />
       <input type="text" id="name" name="name" placeholder="Your name here" />
