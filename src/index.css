@@ -165,6 +165,8 @@ textarea {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   width: 600px;
 }
 
@@ -207,6 +209,7 @@ button:focus-visible {
   /* background-color: #05c7a2; */
   font-weight: bold;
   padding: 20px;
+  margin: 20px auto;
 }
 
 #qr-code {
