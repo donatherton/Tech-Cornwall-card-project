@@ -55,10 +55,10 @@ export default function GetPhoto({setIsOpen}) {
       (e) => {
         takePicture();
         document.querySelector('#profile-pic').scrollIntoView({behavior: 'smooth', block: 'start'});
-        document.querySelector('#video').srcObject.getTracks()[0].stop();
         streaming = false;
         startButton.style.display = 'none';
         openButton.style.display = 'block';
+        document.querySelector('#video').srcObject.getTracks()[0].stop();
       },
       false,
     );
