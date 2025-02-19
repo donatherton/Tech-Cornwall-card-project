@@ -12,7 +12,7 @@ export default function Footer({setUrl}) {
       .then(function (URL) {
         var newImg = new Image();
         newImg.src = URL;
-        newImg.style.scrollMarginTop = '150px';
+        newImg.style.scrollMarginTop = '300px';
         const imgDiv = document.querySelector('#show-image');
         imgDiv.appendChild(newImg);
         imgDiv.style.opacity = 1;
@@ -41,7 +41,9 @@ export default function Footer({setUrl}) {
         <button type="submit" onClick={(e) => qrGenerate(e)}>Generate QR</button>
       </form>
       <button id="convert-button" onClick={convertToImage}>Convert to image</button>
-      <div ref={ref} id="show-image"><p>Image (right-click or long press for options):</p></div>
+      <div ref={ref} id="show-image">
+        <p>Image (right-click or long press for sharing / saving options):</p>
+      </div>
     </footer>
   );
 }

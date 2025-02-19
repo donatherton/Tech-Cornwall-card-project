@@ -6,7 +6,7 @@ export default function Main({url}) {
 
   const inputs = [...Array(5)].map((e,i) =>
     <div className="input-div" key={i}>
-      <input type="text" placeholder="Your attribute here" />
+      <input type="text" placeholder="Type your skill here" />
         <input type="text"
           className="rating"
           size="2"
@@ -24,7 +24,7 @@ export default function Main({url}) {
         <img src={profilePlaceholder} id="photo" alt="" />
       </div>
       <img src={logo} id="logo" alt="logo" />
-      <input type="text" id="name" name="name" placeholder="Your name here" />
+      <input type="text" id="name" name="name" placeholder="Type your name here" />
 
       <div id="attr-div"> 
         {inputs}
