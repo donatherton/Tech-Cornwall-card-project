@@ -6,7 +6,7 @@ export default function Main({url}) {
 
   const inputs = [...Array(5)].map((e,i) =>
     <div className="input-div" key={i}>
-      <input type="text" placeholder="Type your skill here" />
+      <input type="text" placeholder="Type a skill and level (1 to 10)" />
         <input type="text"
           className="rating"
           size="2"
@@ -35,7 +35,7 @@ export default function Main({url}) {
         <div id="qr-code">
           <QR url={url} />
         </div>
-        <textarea name="text-area" placeholder="Say a few words about yourself here" />
+        <textarea name="text-area" placeholder="Write something about yourself here" />
       </div>
     </main>
   );

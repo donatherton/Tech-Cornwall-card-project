@@ -42,7 +42,7 @@ export default function Footer({setUrl}) {
       </form>
       <button id="convert-button" onClick={convertToImage}>Convert to image</button>
       <div ref={ref} id="show-image">
-        <p>Image (right-click or long press for sharing / saving options):</p>
+        <p>Right-click or long press on the image for sharing and saving options</p>
       </div>
     </footer>
   );
