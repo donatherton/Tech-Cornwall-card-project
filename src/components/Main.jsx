@@ -11,7 +11,8 @@ export default function Main({url}) {
           className="rating"
           size="2"
           maxLength="2"
-          pattern="[0-9]{1,2}" /> 
+          pattern="[0-9]{1,2}"
+          placeholder="10" /> 
         <hr />
     </div>);
   
